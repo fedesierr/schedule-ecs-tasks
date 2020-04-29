@@ -1,0 +1,5 @@
+services:
+  - cluster: test-cluster
+    service: ppa-services-test
+  - cluster: test-cluster
+    service: prestable-site-uy-test
