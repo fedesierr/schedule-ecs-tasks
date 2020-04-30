@@ -7,7 +7,7 @@ For more information on `schedule` event check out the Serverless docs on [sched
 
 Common use is stop and start FRAGATE tasks to optimize costs.
 
-Eg: all tasks in the Test environment stop at 6 PM and start again at 9 AM.
+Eg: _all tasks in the Test environment stop at 6 PM and start again at 9 AM._
 
 ## Cron syntax
 
