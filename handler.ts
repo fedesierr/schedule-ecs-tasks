@@ -8,6 +8,7 @@ export interface Target {
 export interface Service {
     cluster: string,
     service: string
+    desiredCount: number
 }
 
 function updateService(ecs: AWS.ECS, params: AWS.ECS.UpdateServiceRequest): Promise<string> {
@@ -48,7 +49,7 @@ export const start = async (event: Target): Promise<string[]> => {
         const params: AWS.ECS.UpdateServiceRequest = {
           cluster: target.cluster,
           service: target.service,
-          desiredCount: 1
+          desiredCount: target.desiredCount
         };
         promises.push(updateService(ecs, params))
       }

@@ -1,5 +1,7 @@
 services:
   - cluster: test-cluster
-    service: ppa-services-test
+    service: service1
+    desiredCount: 1
   - cluster: test-cluster
-    service: prestable-site-uy-test
+    service: service2
+    desiredCount: 1
